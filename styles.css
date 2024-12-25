@@ -1,13 +1,8 @@
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
-}
-
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-fundo: #00030C; 
 }
 
 * {
@@ -15,12 +10,17 @@ body {
     padding: 0;
 }
 
-.principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
 }
 
 .container {
     height: 100vh;
+}
+
+.principal {
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
