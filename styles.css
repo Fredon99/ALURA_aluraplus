@@ -4,6 +4,7 @@
     --cor-primaria: #FFFFFF;
     --cor-secundaria: #C0C0C0;
     --cor-botao: #167BF7;
+    --cor-botao-efeito: #0976fc;
     --cor-fundo: #00030C;
     --fonte-principal: "Inter", serif;
 }
@@ -57,7 +58,7 @@ body {
 }
 
 .botao_secundario {
-    background-color: transparent !important;
+    background-color: transparent;
     border: 2px solid var(--cor-primaria);
 }
 
@@ -146,4 +147,20 @@ body {
     margin-bottom: 2em;
     color: var(--cor-secundaria);
     font-weight: 300;
+}
+
+/* Adicional */
+
+.rodape__lista__item a:hover {
+    color: var(--cor-botao);
+}
+
+.rodape__lista__item a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-botao-efeito);
+    color: var(--cor-fundo);
+    border-color: var(--cor-botao-efeito);
 }
