@@ -21,6 +21,7 @@ body {
     font-weight: 400;
 }
 
+/* Primeira pagina */
 .container {
     height: 100vh;
     display: grid;
@@ -31,11 +32,18 @@ body {
     background-image: url("/img/background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
+    
 }
 
 .container__titulo {
     font-size: 1.75rem;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0em 2em 0em;
 }
 
 .container__botao {
@@ -45,6 +53,7 @@ body {
     text-decoration: none;
     color: var(--cor-primaria);
     display: block;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
@@ -57,3 +66,84 @@ body {
     color: var(--cor-secundaria);
 }
 
+.container__caixa {
+    margin: 0em 6em;
+}
+
+/*Segunda pagina */
+.secundario__imagem {
+    width: 80%
+}
+
+.secundario {
+    align-items: center;
+    margin: 0em 10em;
+}
+
+.container__descricao__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.container__descricao__texto {
+    line-height: 1.8em;
+    color: var(--cor-secundaria);
+}
+
+/* Terceira pagina */
+.botao_terciario {
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+/* Quarta pagina */
+.dispositivos {
+    text-align: center;
+}
+.dispositivos_titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.dispositivos__lista {
+    padding: 4em 0em 0em 5em;
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.dispositivos__lista__item {
+    font-size: 2em;
+    color: var(--cor-primaria);
+}
+
+
+/* Footer */
+.rodape {
+    margin-top: 8em;
+    text-align: center;
+}
+.rodape__lista {
+    margin: 3em 0em;
+    justify-content: space-around;
+    display: flex;
+    list-style-type: none;
+    
+}
+.rodape__link {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+.rodape__texto {
+    font-size: 0.75em;
+    margin-bottom: 2em;
+    color: var(--cor-secundaria);
+    font-weight: 300;
+}
